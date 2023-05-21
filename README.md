@@ -38,3 +38,28 @@ a web based application or a platform where we provide various services to the e
 npm install
 npm start
 ```
+
+
+How to contribute
+
+🚀 Getting Started
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
+Create an issue of the project or a feature you would like to add in the project and get the task assigned for youself. (issue can be any feature or project that you think you could contribute to).
+
+Fork the repo to your Github.
+
+Clone the Repo by going to your local Git Client in a particular local folder in your local machine by using this command with your forked repository link in place of below given link:
+git clone https://github.com/<GITHUB USERNAME>/MaaMatters.git
+
+Create a branch using below command. git branch <your branch name>
+
+Checkout to your branch. git checkout <your branch name>
+
+Add your code in your local machine folder. git add . 
+
+Commit your changes. git commit -m"<add your message here>"
+
+Push your changes. git push  origin <your branch name>
+
+Make a pull request! (compare your branch with the owner main branch)
