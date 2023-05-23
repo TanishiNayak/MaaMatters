@@ -48,6 +48,31 @@
     
   <div class="overflow-x-hidden relative w-full">
        <!--Navbar-->
+
+       <nav class="relative bg-white flex flex-row justify-between">
+        <!--Left Design-->
+        <div style="width:40px;background:#2B83EA;clip-path:polygon(0 0, 0% 100%, 100% 100%);margin-top:-7px;z-index:999" class="css-0"></div>
+        <div style="width:240px;margin-left:-215px;background:#F3F8FE;clip-path:polygon(0px 0px, 82% 0px, 100% 100%, 15% 100%)" class="css-0"></div>
+    
+        <!--Center wala text & button-->
+        <div class="flex flex-row space-x-1 lg:space-x-2 items-center whitespace-nowrap">
+            <p class="font-mullish text-lg hidden lg:block">
+                MaaMatters: A platform where pregnant women can feel safe and cared for!
+            </p>
+            <p class="font-mullish text-sm lg:hidden">
+              MaaMatters: Trusted Platform for women!
+            </p>
+            <button class="bg-lightBlue text-white py-[2px] px-[12px] lg:py-[10px] lg:px-[10px] hidden md:block mt-2 mb-2 font-mullish font-bold text-xs border rounded-md hover:bg-lightBlue500 transition-all duration-200">Know More</button>
+            
+
+        </div>
+        <!--Right wala design-->
+        <div style="width:220px;margin-right:-215px; opacity:0.6;background:#E7F1FD;clip-path:polygon(0px 0px, 82% 0px, 100% 100%, 18% 100%)" class="css-0"></div>
+        <div style="width:40px;background:#2B83EA;clip-path:polygon(0 0, 100% 100%, 100% 0);z-index:999" class="css-0"></div>
+        
+        
+        
+    </nav>
     <nav class="bg-deepBlue">
       <div class="relative w-[1080px] mx-auto flex items-center justify-between ">
 
@@ -144,7 +169,7 @@
   <section
   class="relative bg-deepBlue">
 
-  <div class="w-10/12 max-w-[1080px] flex sm:flex-col lg:flex-row justify-between items-center mx-auto ">
+  <div class="w-10/12 max-w-[1080px] flex flex-col lg:flex-row justify-between items-center mx-auto ">
       <!--left part-->
       <div class="space-y-8">
           <h1 class="font-mullish font-bold text-[40px] leading-[1.2] text-white">An Ongoing Journey</h1>
@@ -153,17 +178,17 @@
               You are not alone, we're here for you at each step. Lets make your motherhood more beautiful together.
           </p>
           <a href="loginandsignup/register.html"><button
-          class="bg-lightBlue text-white  mt-7 py-[14px] px-[18px] rounded-md font-mullish font-bold
+          class="bg-lightBlue text-white  mt-7 py-[14px] px-[18px] font-mullish font-bold border rounded-sm 
           hover:bg-lightBlue500 transition-all duration-200"
           >Sign Up Now</button></a>
       </div>
       <!--right part-->
       <img src="./images/img1.png" alt=""
-      class="w-full max-w-[650px] brightness-90">
+      class="w-full max-w-[610px] brightness-90">
   </div>
 
   <!--shape part-->
-  <div class="w-[103%] absolute left-0 right-0">
+  <div class="absolute left-0 right-0 w-[100%]">
       <img src="./images/hero-shape.svg" alt=""
       class="w-full object-fill ">
   </div>
@@ -171,16 +196,16 @@
   </section>
 
   <!--feature section - 1-->
-  <section class="relative mt-[190px] overflow-hidden mb-0">
+  <section class="relative mt-[200px] overflow-hidden">
       <img src="./images/feature-section1-dottedrows.png" alt="" loading="lazy" 
       width="233"
       height="167"
-      class="absolute -top-[8rem] left-[10rem] inline-block -z-10">
+      class="absolute -top-[8rem] left-[12rem] inline-block">
 
       <img src="./images/feature-section1-dottedrows.png" alt="" loading="lazy"
       width="233"
       height="167"
-      class="absolute top-[3rem] right-0 inline-block rotate-180">
+      class="absolute top-[2rem] right-0 inline-block rotate-180">
 
       <div class="relative w-11/12 max-w-[1080px] mx-auto pt-4">
         
@@ -188,7 +213,7 @@
           <div class="w-full min-h-[520px] bg-white flex justify-evenly gap-0 rounded-md relative p-10 py-12 border mt-0">
               <!--left section-->
               <div class="flex flex-col justify-between  w-full">
-                  <h3 class="font-mullish text-[28px] leading-10 font-bold max-w-[500px] pb-0 mb-0">
+                  <h3 class="font-mullish text-[28px] leading-10 font-bold max-w-[500px]">
                       Smoothen your pregnancy at the one-stop-destination
                       <span class="text-lightBlue">MaaMatters</span>
                   </h3>
@@ -224,7 +249,7 @@
               <!-- for button and hyperlink-->
               <div class="flex flex-col-reverse md:flex-row items-center space-x-4 ">
                   <!--hyperlink-->
-                  <div class="flex self-start md:items-center cursor-pointer group">
+                  <div class="flex self-start mb-2 md:items-center md:self-center cursor-pointer group">
                       <a href="about.html" 
                       class="font-mullish font-bold text-lightBlue500 
                       group-hover:text-grayBlue transition-all duration-200"
@@ -236,27 +261,29 @@
                   </div>
               </div>
             </div>
-          <img src="images/sideimg.png"
-          class="h-[30rem] saturate-200 pr-10 brightness-110">
+          <img src="images/sideimg.png" alt=""
+          class="w-full h-[30rem] max-w-[450px] saturate-200 pr-10 brightness-110
+          hidden md:max-w-[300px] lg:max-w-[450px] md:block lg:block absolute right-0 bottom-0">
 </section>
              
   <!-- feature section 2-->
   <section
-  class="bg-[url(./images/feature-section-2BG.svg)] bg-no-repeat bg-cover pb-[500px] mt-14 pt-[20rem]">
+  class="bg-[url(./images/feature-section-2BG.svg)] bg-no-repeat bg-cover pb-[60rem] md:pb-[30rem] lg:pb-[28rem] pt-[28rem] md:pt-[15rem] lg:pt-[10rem] overflow-hidden featurebg">
      
   <div
-  class="w-10/12 max-w-[1080px]  mx-auto relative pt-1">
+  class="w-10/12 max-w-[1080px]  mx-auto relative  pt-16 md:pt-4">
             <h2 class="font-mullish text-center text-3xl leading-[1.2] font-extrabold hidden md:block text-white mt-0 pt-0">Explore Our Services</h2>
             <div class="w-6 h-1 bg-greenLight mx-auto mt-4 mb-6"></div>
               <!--card box-->
-              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-4 my-14">
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-4 my-14 ">
                   <!--box1-->
                   <div
-                  class="w-full min-h-[15rem] relative cursor-pointer featureCard2"
+                  class="w-full min-h-[15rem] relative cursor-pointer group featureCard2 hover:scale-105"
                 >
                   <!-- box icon -->
                   <img
-                    src="images\Untitled design (7).png" class="absolute right-0 top-0 w-16 h-16 featureCardIcon transition-all duration-200"
+                    src="images\Untitled design (7).png" alt="" class="bg-lightBlue absolute right-3 top-3 w-12 h-12 rounded-full z-[8]
+                    transition-all duration-200 group-hover:bg-lightBlue300"
                   />
                   <!-- box shape -->
                   <svg
@@ -283,8 +310,10 @@
                   </svg>
                   <!-- box content -->
                   <div
-                    class="z-[1000] absolute h-full w-full pl-5 py-6 pr-8 flex flex-col justify-between featureCardBox"
+                    class="z-[1000] absolute pl-5 py-6 pr-8 flex flex-col justify-between featureCardBox"
                   >
+                  <!--Wavy line-->
+                  <img src="./images/features-wave.svg" alt="" width="80px" height="56px" class="absolute right-0 bottom-[16px] hidden group-hover:block ">
                     <div>
                       <h3
                         class="font-mullish font-extrabold text-white leading-[1.2] text-[1.375rem]"
@@ -296,10 +325,10 @@
 linked with the data of due dates of the expectant to manage the availability.
                       </p>
                     </div>
-                    <div class="flex items-center cursor-pointer place-items-end">
+                    <div class="flex items-center cursor-pointer group mt-6">
                       <a
                         href="#"
-                        class="font-mullish font-bold text-lightBlue500 transition-all duration-200"
+                        class="font-mullish font-bold text-lightBlue500 transition-all duration-200  "
                         >Know More</a
                       >
                       <i
@@ -311,40 +340,41 @@ linked with the data of due dates of the expectant to manage the availability.
                   </div>
                   <!--box2-->
                   <div
-                  class="w-full min-h-[15rem] relative cursor-pointer featureCard2"
+                  class="w-full min-h-[15rem] relative cursor-pointer group featureCard2 hover:scale-105"
                 >
                   <!-- box icon -->
                   <img
-                    src="images\4.png"
-                    class="absolute right-0 top-0 w-14 h-14 featureCardIcon transition-all duration-200"
-                  />
-                  <!-- box shape -->
-                  <svg
-                    viewBox="0 0 349.32501220703125 225"
-                    xmlns="http://www.w3.org/2000/svg"
-                    preserveAspectRatio="none"
-                    class="stroke-1 stroke-[#525a76] h-full w-full absolute z-[90] featureCardSVG transition-all duration-200"
-                    style="stroke-opacity: 0.8"
-                  >
-                    <path
-                      d="m 0 6 
-                    a 6 6 0 0 1 6 -6 
-                    h 250.32501220703125 
-                    a 16 16 0 0 1 11 5 
-                    l 77 77 
-                    a 16 16 0 0 1 5 11 
-                    v 126 
-                    a 6 6 0 0 1 -6 6 
-                    h -337.32501220703125 
-                    a 6 6 0 0 1 -6 -6 
-                    z"
-                      fill="#181C2E"
-                    ></path>
-                  </svg>
+                  src="images\Untitled design (7).png" alt="" class="bg-lightBlue absolute right-3 top-3 w-12 h-12 rounded-full z-[8]
+                  transition-all duration-200 group-hover:bg-lightBlue300"
+                />
+                <!-- box shape -->
+                <svg
+                  viewBox="0 0 349.32501220703125 225"
+                  xmlns="http://www.w3.org/2000/svg"
+                  preserveAspectRatio="none"
+                  class="stroke-1 stroke-[#525a76] h-full w-full absolute z-[90] featureCardSVG transition-all duration-200"
+                  style="stroke-opacity: 0.8"
+                >
+                  <path
+                    d="m 0 6 
+                  a 6 6 0 0 1 6 -6 
+                  h 250.32501220703125 
+                  a 16 16 0 0 1 11 5 
+                  l 77 77 
+                  a 16 16 0 0 1 5 11 
+                  v 126 
+                  a 6 6 0 0 1 -6 6 
+                  h -337.32501220703125 
+                  a 6 6 0 0 1 -6 -6 
+                  z"
+                    fill="#181C2E"
+                  ></path>
+                </svg>
                   <!-- box content -->
                   <div
-                    class="z-[1000] absolute h-full w-full pl-5 py-6 pr-8 flex flex-col justify-between featureCardBox"
+                    class="z-[1000] absolute pl-5 py-6 pr-8 flex flex-col justify-between featureCardBox"
                   >
+                  <img src="./images/features-wave.svg" alt="" width="80px" height="56px" class="absolute right-0 bottom-[16px] hidden group-hover:block ">
                     <div>
                       <h3
                         class="font-mullish font-extrabold text-white leading-[1.2] text-[1.375rem]"
@@ -355,10 +385,10 @@ linked with the data of due dates of the expectant to manage the availability.
                         Foretell the baby's blood group and ensure the availability of mother's and baby's blood group in the locality.
                       </p>
                     </div>
-                    <div class="flex items-center cursor-pointer place-items-end">
+                    <div class="flex items-center cursor-pointer group mt-6">
                       <a
                         href="#"
-                        class="font-mullish font-bold text-lightBlue500 transition-all duration-200"
+                        class="font-mullish font-bold text-lightBlue500 transition-all duration-200 "
                         >Know More</a
                       >
                       <i
@@ -370,41 +400,41 @@ linked with the data of due dates of the expectant to manage the availability.
                   </div>
                   <!--box3-->
                   <div
-                  class="w-full min-h-[15rem] relative cursor-pointer featureCard2"
+                  class="w-full min-h-[15rem] relative cursor-pointer group featureCard2 hover:scale-105"
                 >
                   <!-- box icon -->
                   <img
-                    src="images\2.png"
-                    class="absolute right-0 top-0 w-16 h-16 featureCardIcon transition-all duration-200"
-                  />
-                  <!-- box shape -->
-                  <svg
-                    viewBox="0 0 349.32501220703125 225"
-                    xmlns="http://www.w3.org/2000/svg"
-                    preserveAspectRatio="none"
-                    class="stroke-1 stroke-[#525a76] h-full w-full absolute z-[90] featureCardSVG transition-all duration-200"
-                    style="stroke-opacity: 0.8"
-                  >
-                    <path
-                      d="m 0 6 
-                    a 6 6 0 0 1 6 -6 
-                    h 250.32501220703125 
-                    a 16 16 0 0 1 11 5 
-                    l 77 77 
-                    a 16 16 0 0 1 5 11 
-                    v 126 
-                    a 6 6 0 0 1 -6 6 
-                    h -337.32501220703125 
-                    a 6 6 0 0 1 -6 -6 
-                    z"
-                      fill="#181C2E"
-                    ></path>
-                  </svg>
-        
+                  src="images\Untitled design (7).png" alt="" class="bg-lightBlue absolute right-3 top-3 w-12 h-12 rounded-full z-[8]
+                  transition-all duration-200 group-hover:bg-lightBlue300"
+                />
+                <!-- box shape -->
+                <svg
+                  viewBox="0 0 349.32501220703125 225"
+                  xmlns="http://www.w3.org/2000/svg"
+                  preserveAspectRatio="none"
+                  class="stroke-1 stroke-[#525a76] h-full w-full absolute z-[90] featureCardSVG transition-all duration-200"
+                  style="stroke-opacity: 0.8"
+                >
+                  <path
+                    d="m 0 6 
+                  a 6 6 0 0 1 6 -6 
+                  h 250.32501220703125 
+                  a 16 16 0 0 1 11 5 
+                  l 77 77 
+                  a 16 16 0 0 1 5 11 
+                  v 126 
+                  a 6 6 0 0 1 -6 6 
+                  h -337.32501220703125 
+                  a 6 6 0 0 1 -6 -6 
+                  z"
+                    fill="#181C2E"
+                  ></path>
+                </svg>
                   <!-- box content -->
                   <div
-                    class="z-[1000] absolute h-full w-full pl-5 py-6 pr-8 flex flex-col justify-between featureCardBox"
+                    class="z-[1000] absolute pl-5 py-6 pr-8 flex flex-col justify-between featureCardBox"
                   >
+                  <img src="./images/features-wave.svg" alt="" width="80px" height="56px" class="absolute right-0 bottom-[16px] hidden group-hover:block ">
                     <div>
                       <h3
                         class="font-mullish font-extrabold text-white leading-[1.2] text-[1.375rem]"
@@ -415,7 +445,7 @@ linked with the data of due dates of the expectant to manage the availability.
                         Connect them with fellow mothers who have faced the same challenges
                       </p>
                     </div>
-                    <div class="flex items-center cursor-pointer place-items-end">
+                    <div class="flex items-center cursor-pointer mt-6">
                       <a
                         href="https://sites.google.com/view/blogforwomen/home"
                         class="font-mullish font-bold text-lightBlue500 transition-all duration-200"
@@ -429,40 +459,41 @@ linked with the data of due dates of the expectant to manage the availability.
                   </div>
                   </div>
                   <div
-                  class="w-full min-h-[15rem] relative cursor-pointer featureCard2"
+                  class="w-full min-h-[15rem] relative cursor-pointer group featureCard2 hover:scale-105"
                 >
                   <!-- box icon -->
                   <img
-                    src="images\3.png"
-                    class="absolute right-0 top-0 w-16 h-16 featureCardIcon transition-all duration-200"
-                  />
-                  <!-- box shape -->
-                  <svg
-                    viewBox="0 0 349.32501220703125 225"
-                    xmlns="http://www.w3.org/2000/svg"
-                    preserveAspectRatio="none"
-                    class="stroke-1 stroke-[#525a76] h-full w-full absolute z-[90] featureCardSVG transition-all duration-200"
-                    style="stroke-opacity: 0.8"
-                  >
-                    <path
-                      d="m 0 6 
-                    a 6 6 0 0 1 6 -6 
-                    h 250.32501220703125 
-                    a 16 16 0 0 1 11 5 
-                    l 77 77 
-                    a 16 16 0 0 1 5 11 
-                    v 126 
-                    a 6 6 0 0 1 -6 6 
-                    h -337.32501220703125 
-                    a 6 6 0 0 1 -6 -6 
-                    z"
-                      fill="#181C2E"
-                    ></path>
-                  </svg>
+                  src="images\Untitled design (7).png" alt="" class="bg-lightBlue absolute right-3 top-3 w-12 h-12 rounded-full z-[8]
+                  transition-all duration-200 group-hover:bg-lightBlue300"
+                />
+                <!-- box shape -->
+                <svg
+                  viewBox="0 0 349.32501220703125 225"
+                  xmlns="http://www.w3.org/2000/svg"
+                  preserveAspectRatio="none"
+                  class="stroke-1 stroke-[#525a76] h-full w-full absolute z-[90] featureCardSVG transition-all duration-200"
+                  style="stroke-opacity: 0.8"
+                >
+                  <path
+                    d="m 0 6 
+                  a 6 6 0 0 1 6 -6 
+                  h 250.32501220703125 
+                  a 16 16 0 0 1 11 5 
+                  l 77 77 
+                  a 16 16 0 0 1 5 11 
+                  v 126 
+                  a 6 6 0 0 1 -6 6 
+                  h -337.32501220703125 
+                  a 6 6 0 0 1 -6 -6 
+                  z"
+                    fill="#181C2E"
+                  ></path>
+                </svg>
                   <!-- box content -->
                   <div
-                    class="z-[1000] absolute h-full w-full pl-5 py-6 pr-8 flex flex-col justify-between featureCardBox"
+                    class="z-[1000] absolute pl-5 py-6 pr-8 flex flex-col justify-between featureCardBox"
                   >
+                  <img src="./images/features-wave.svg" alt="" width="80px" height="56px" class="absolute right-0 bottom-[16px] hidden group-hover:block ">
                     <div>
                       <h3
                         class="font-mullish font-extrabold text-white leading-[1.2] text-[1.375rem]"
@@ -474,7 +505,7 @@ linked with the data of due dates of the expectant to manage the availability.
 
                       </p>
                     </div>
-                    <div class="flex items-center cursor-pointer place-items-end">
+                    <div class="flex items-center cursor-pointer mt-6">
                       <a
                         href="https://momchatroom.my.canva.site/"
                         class="font-mullish font-bold text-lightBlue500 transition-all duration-200"
@@ -488,40 +519,41 @@ linked with the data of due dates of the expectant to manage the availability.
                   </div>
                   </div>
                   <div
-                  class="w-full min-h-[15rem] relative cursor-pointer featureCard2"
+                  class="w-full min-h-[15rem] relative cursor-pointer group featureCard2 hover:scale-105"
                 >
                   <!-- box icon -->
                   <img
-                    src="images\1.png"
-                    class="absolute right-0 top-0 w-16 h-16 featureCardIcon transition-all duration-200"
-                  />
-                  <!-- box shape -->
-                  <svg
-                    viewBox="0 0 349.32501220703125 225"
-                    xmlns="http://www.w3.org/2000/svg"
-                    preserveAspectRatio="none"
-                    class="stroke-1 stroke-[#525a76] h-full w-full absolute z-[90] featureCardSVG transition-all duration-200"
-                    style="stroke-opacity: 0.8"
-                  >
-                    <path
-                      d="m 0 6 
-                    a 6 6 0 0 1 6 -6 
-                    h 250.32501220703125 
-                    a 16 16 0 0 1 11 5 
-                    l 77 77 
-                    a 16 16 0 0 1 5 11 
-                    v 126 
-                    a 6 6 0 0 1 -6 6 
-                    h -337.32501220703125 
-                    a 6 6 0 0 1 -6 -6 
-                    z"
-                      fill="#181C2E"
-                    ></path>
-                  </svg>
+                  src="images\Untitled design (7).png" alt="" class="bg-lightBlue absolute right-3 top-3 w-12 h-12 rounded-full z-[8]
+                  transition-all duration-200 group-hover:bg-lightBlue300"
+                />
+                <!-- box shape -->
+                <svg
+                  viewBox="0 0 349.32501220703125 225"
+                  xmlns="http://www.w3.org/2000/svg"
+                  preserveAspectRatio="none"
+                  class="stroke-1 stroke-[#525a76] h-full w-full absolute z-[90] featureCardSVG transition-all duration-200"
+                  style="stroke-opacity: 0.8"
+                >
+                  <path
+                    d="m 0 6 
+                  a 6 6 0 0 1 6 -6 
+                  h 250.32501220703125 
+                  a 16 16 0 0 1 11 5 
+                  l 77 77 
+                  a 16 16 0 0 1 5 11 
+                  v 126 
+                  a 6 6 0 0 1 -6 6 
+                  h -337.32501220703125 
+                  a 6 6 0 0 1 -6 -6 
+                  z"
+                    fill="#181C2E"
+                  ></path>
+                </svg>
                   <!-- box content -->
                   <div
-                    class="z-[1000] absolute h-full w-full pl-5 py-6 pr-8 flex flex-col justify-between featureCardBox"
+                    class="z-[1000] absolute pl-5 py-6 pr-8 flex flex-col justify-between featureCardBox"
                   >
+                  <img src="./images/features-wave.svg" alt="" width="80px" height="56px" class="absolute right-0 bottom-[16px] hidden group-hover:block ">
                     <div>
                       <h3
                         class="font-mullish font-extrabold text-white leading-[1.2] text-[1.375rem]"
@@ -532,7 +564,7 @@ linked with the data of due dates of the expectant to manage the availability.
                         Providing online consultation services to avoid the hassle of weekly or monthly visits to the doctor
                       </p>
                     </div>
-                    <div class="flex items-center cursor-pointer place-items-end">
+                    <div class="flex items-center cursor-pointer mt-6">
                       <a
                         href="./doctorappointment/index.html"
                         class="font-mullish font-bold text-lightBlue500 transition-all duration-200"
@@ -546,40 +578,41 @@ linked with the data of due dates of the expectant to manage the availability.
                   </div>
                   </div>
                   <div
-                  class="w-full min-h-[15rem] relative cursor-pointer featureCard2"
+                  class="w-full min-h-[15rem] relative cursor-pointer group featureCard2 hover:scale-105"
                 >
                   <!-- box icon -->
                   <img
-                    src="images\Untitled design (8).png"
-                    class="absolute right-0 top-0 w-16 h-16 featureCardIcon transition-all duration-200"
-                  />
-                  <!-- box shape -->
-                  <svg
-                    viewBox="0 0 349.32501220703125 225"
-                    xmlns="http://www.w3.org/2000/svg"
-                    preserveAspectRatio="none"
-                    class="stroke-1 stroke-[#525a76] h-full w-full absolute z-[90] featureCardSVG transition-all duration-200"
-                    style="stroke-opacity: 0.8"
-                  >
-                    <path
-                      d="m 0 6 
-                    a 6 6 0 0 1 6 -6 
-                    h 250.32501220703125 
-                    a 16 16 0 0 1 11 5 
-                    l 77 77 
-                    a 16 16 0 0 1 5 11 
-                    v 126 
-                    a 6 6 0 0 1 -6 6 
-                    h -337.32501220703125 
-                    a 6 6 0 0 1 -6 -6 
-                    z"
-                      fill="#181C2E"
-                    ></path>
-                  </svg>
+                  src="images\Untitled design (7).png" alt="" class="bg-lightBlue absolute right-3 top-3 w-12 h-12 rounded-full z-[8]
+                  transition-all duration-200 group-hover:bg-lightBlue300"
+                />
+                <!-- box shape -->
+                <svg
+                  viewBox="0 0 349.32501220703125 225"
+                  xmlns="http://www.w3.org/2000/svg"
+                  preserveAspectRatio="none"
+                  class="stroke-1 stroke-[#525a76] h-full w-full absolute z-[90] featureCardSVG transition-all duration-200"
+                  style="stroke-opacity: 0.8"
+                >
+                  <path
+                    d="m 0 6 
+                  a 6 6 0 0 1 6 -6 
+                  h 250.32501220703125 
+                  a 16 16 0 0 1 11 5 
+                  l 77 77 
+                  a 16 16 0 0 1 5 11 
+                  v 126 
+                  a 6 6 0 0 1 -6 6 
+                  h -337.32501220703125 
+                  a 6 6 0 0 1 -6 -6 
+                  z"
+                    fill="#181C2E"
+                  ></path>
+                </svg>
                   <!-- box content -->
                   <div
-                    class="z-[1000] absolute h-full w-full pl-5 py-6 pr-8 flex flex-col justify-between featureCardBox"
+                    class="z-[1000] absolute pl-5 py-6 pr-8 flex flex-col justify-between featureCardBox"
                   >
+                  <img src="./images/features-wave.svg" alt="" width="80px" height="56px" class="absolute right-0 bottom-[16px] hidden group-hover:block ">
                     <div>
                       <h3
                         class="font-mullish font-extrabold text-white leading-[1.2] text-[1.375rem]"
@@ -592,7 +625,7 @@ linked with the data of due dates of the expectant to manage the availability.
 
                       </p>
                     </div>
-                    <div class="flex items-center cursor-pointer place-items-end">
+                    <div class="flex items-center cursor-pointer mt-6">
                       <a
                         href="https://maamatters.my.canva.site/"
                         class="font-mullish font-bold text-lightBlue500 transition-all duration-200"
@@ -611,37 +644,43 @@ linked with the data of due dates of the expectant to manage the availability.
   </section>
 
   <!--new feeatures -->
-  <section class="bg-white relative">
+  <section class="bg-white relative md:mt-auto">
       <div class="relative w-11/12 max-w-[1080px] mx-auto pt-4">
           <img src="./images/feature-section1-dottedrows.png" alt=""
-          class="absolute w-[233px] left-[300px] -top-[6rem] z-10">
+          class="absolute w-[233px] left-[300px] -top-[6rem] z-10 hidden md:block">
           <img src="./images/feature-section1-dottedrows.png" alt=""
-          class="absolute w-[233px] -right-[3.5rem] -top-[6rem] z-10" >
+          class="absolute w-[233px] -right-[3.5rem] -top-[6rem] z-10 hidden md:block" >
 
-          <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-10 gap-x-4 relative z-[100]">
+          <div class="w-full grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-y-10 gap-x-4 relative z-[100]">
               <!--item 1-->
-              <div class="relative flex items-center z-0">
-                  <h2
-                  class="text-deepBlueHead font-mullish font-extrabold text-6xl leading-[3.375rem] text-right"
-                  >Meet <br>
-                      <span class="text-lightBlue500">
-                          the
-                      </span> <br>
-                      TEAM
-                  </h2>
-              </div>
+                <div class="flex">
+                  <div class="relative justify-center items-center w-full">
+                    <h2
+                    class="text-deepBlueHead text-center font-mullish font-extrabold text-4xl leading-[3.375rem] items-center justify-center"
+                    >Meet <br>
+                        <span class="text-lightBlue500">
+                            the
+                        </span> <br>
+                        TEAM
+                    </h2>
+                  </div>
+                </div>
+             
               <!--card 1-->
               <div
               class="p-10 bg-[url(/images/instant-settlement-bg.svg)] w-full max-h-[300px] cursor-pointer
               bg-no-repeat transition-all duration-200
               hover:bg-[url(/images/instant-settlement-bghover.svg)]
               bg-white" >
-                  <img src="images/tanishi.png" class="h-[16rem]">
+                <div class="flex flex-col">
+                  <img src="images/tanishi.png" alt="" class="h-[16rem] object-contain">
                   <h3 class="font-mullish text-lg font-bold pt-4 text-center">Tanishi Nayak</h3>
-                  <div class="flex flex-row items-center cursor-pointer group">
+                </div>
+                  
+                  <!-- <div class="flex flex-row items-center cursor-pointer group">
                   
                       
-                      </div>
+                      </div> -->
                   
               </div>
               <div
@@ -649,25 +688,26 @@ linked with the data of due dates of the expectant to manage the availability.
               bg-no-repeat transition-all duration-200
               hover:bg-[url(/images/instant-settlement-bghover.svg)]
               bg-white" >
-                  <img src="images/anchit.png" class="h-[16rem]">
+                <div class="flex flex-col">
+                    <img src="images/anchit.png" class="h-[16rem] object-contain">
                   <h3 class="font-mullish text-lg font-bold pt-4 text-center">Anchit Bansal</h3>
+                </div>
+<!--                 
                   <div class="flex flex-row items-center cursor-pointer group">
-                  
-                      
-                      </div>
+                  </div> -->
                   
               </div>
               <div
-              class="p-10 bg-[url(/images/instant-settlement-bg.svg)] w-full max-h-[300px] cursor-pointer
+              class="hidden lg:block p-10 bg-[url(/images/instant-settlement-bg.svg)] w-full max-h-[300px] cursor-pointer
               bg-no-repeat transition-all duration-200
               hover:bg-[url(/images/instant-settlement-bghover.svg)]
               bg-white" >
               
-                  <h3 class="font-mullish text-lg font-bold pt-4 text-center"> </h3>
+                  <!-- <h3 class="font-mullish text-lg font-bold pt-4 text-center"> </h3>
                   <div class="flex flex-row items-center cursor-pointer group">
                   
                       
-                      </div>
+                      </div> -->
                   
               </div>
               <div
@@ -675,12 +715,15 @@ linked with the data of due dates of the expectant to manage the availability.
               bg-no-repeat transition-all duration-200
               hover:bg-[url(/images/instant-settlement-bghover.svg)]
               bg-white" >
-                  <img src="images/deepti.png" class="h-[16rem]">
+                <div class="flex flex-col">
+                  <img src="images/deepti.png" class="h-[16rem] object-contain">
                   <h3 class="font-mullish text-lg font-bold pt-4 text-center">Deepti Chhabra</h3>
-                  <div class="flex flex-row items-center cursor-pointer group">
+                </div>
+                 
+                  <!-- <div class="flex flex-row items-center cursor-pointer group">
                   
                       
-                      </div>
+                      </div> -->
                   
               </div>
               <div
@@ -688,12 +731,15 @@ linked with the data of due dates of the expectant to manage the availability.
               bg-no-repeat transition-all duration-200
               hover:bg-[url(/images/instant-settlement-bghover.svg)]
               bg-white" >
-                  <img src="images/yashika.png" class="h-[16rem]">
+                <div class="flex flex-col">
+                  <img src="images/yashika.png" class="h-[16rem] object-contain">
                   <h3 class="font-mullish text-lg font-bold pt-4 text-center">Yashika Sood</h3>
-                  <div class="flex flex-row items-center cursor-pointer group">
+                </div>
+                
+                  <!-- <div class="flex flex-row items-center cursor-pointer group">
                   
                       
-                      </div>
+                      </div> -->
                   
               </div>
               <br>
@@ -709,12 +755,12 @@ linked with the data of due dates of the expectant to manage the availability.
 
   <!--join razorpay section-->
 
-  <section class="bg-[#f5f8fe] relative pt-40 pb-12 -mt-[200px] -z-[100]">
+  <section class="bg-[#f5f8fe] relative pt-60 md:pt-40 pb-12 -mt-[200px] -z-[100]">
 
     <div class="w-11/12 max-w-[1080px] mx-auto relative flex flex-col md:flex-row">
 
       <!--left part -->
-      <div class="flex flex-col justify-center w-full md:max-w-[calc(100%-500px)] sm:my-16">
+      <div class="flex flex-col justify-center w-full md:max-w-[calc(100%-500px)] ">
         <h2 class="font-mullish font-bold text-2xl text-deepBlueHead"
         >Frequently Asked Questions (FAQs)
         </h2>
@@ -725,7 +771,7 @@ linked with the data of due dates of the expectant to manage the availability.
       </div>
 
       <!--right part-->
-      <div class="h-[500px] w-[500px] relative overflow-y-hidden mx-auto">
+      <div class="h-[500px] w-[500px] relative overflow-y-hidden mx-auto max-w-[300px] md:max-w-[600px]">
         <div style="background: linear-gradient(180deg, #f4f8ff, #fff0)"
         class="absolute w-full h-[150px] top-0 z-50">    </div>
 
@@ -758,7 +804,7 @@ linked with the data of due dates of the expectant to manage the availability.
 
     <!--left button -->
     <button class="w-[100px] h-[100px] bg-[#f4f8ff] rounded-full absolute left-0 top-1/2
-     flex justify-center items-center ">
+     flex justify-center items-center hidden md:block">
       <div class="w-[65%] h-[65%] bg-[#f4f8ff] rounded-full flex justify-center items-center
       mix-blend-multiply">
         <i
@@ -770,7 +816,7 @@ linked with the data of due dates of the expectant to manage the availability.
 
         <!--right button -->
     <button class="w-[100px] h-[100px] bg-[#f4f8ff] rounded-full absolute right-0 top-1/2
-    flex justify-center items-center ">
+    flex justify-center items-center hidden md:block">
           <div class="w-[65%] h-[65%] bg-[#f4f8ff] rounded-full flex justify-center items-center
           mix-blend-multiply">
             <i
@@ -782,26 +828,26 @@ linked with the data of due dates of the expectant to manage the availability.
 
 
     <!-- main content -->
-    <div class="flex flex-col xl:flex-row max-w-[960px] items-center mx-auto my-20 space-x-[10rem]">
+    <div class="flex flex-col lg:flex-row max-w-[850px] items-center mx-auto my-20 space-x-[6rem]">
       <!--left image -->
       <img src="./images/testimonial.png" alt=""
       height="320px"
       width="320px"
-      class="rounded-xl">
+      class="rounded-xl border-l-zinc-100 ">
 
-      <!-- riught part-->
-      <div class="max-w-[400px] flex flex-col">
+      <!-- right part-->
+      <div class="max-w-[400px] flex flex-col  ">
         <img src="./images/quotes.svg" alt=""
         width="35px"
         height="40px"
-        class="-mb-2 xl:order-1">
-        <p class="font-mullish text-3xl font-extralight xl:order-1">
+        class="-mb-2 lg:order-1 mt-2 md:mt-2">
+        <p class="font-mullish max-w-[350px] text-2xl -ml-12 text-center font-extralight lg:order-1 mt-2">
           MaaMatters actually made me realise my lost worth</p>
           <img src="./images/quotes.svg" alt=""
           width="35px"
           height="40px"
-          class="-mb-2 xl:order-1 rotate-180 ml-72">
-        <p class="font-mullish font-medium xl:order-1"></p>
+          class="-mb-2 lg:order-1 rotate-180 ml-72">
+        <!-- <p class="font-mullish font-medium lg:order-1"></p> -->
       </div>
     </div>
 
@@ -826,17 +872,18 @@ linked with the data of due dates of the expectant to manage the availability.
   </section>
 
   <!--CTA-->
-  <section class="bg-[url(/images/CTABg.svg)] w-full h-full bg-no-repeat bg-cover relative ctaSection min-h-[510px]">
+  <section class="bg-[url(/images/CTABg.svg)] w-full h-full bg-no-repeat bg-cover relative ctaSection min-h-[540px]">
     <!--main content box-->
-    <div class="w-11/12 max-w-[1080px] relative flex flex-row items-center mx-auto justify-between space-x-20 pt-16">
+    <div class="w-11/12 max-w-[1080px] relative flex flex-row items-center mx-auto justify-between space-x-20 pt-24 md:pt-16 pb-32 md:pb-4">
 
       <!--left part-->
       <div class="flex flex-col gap-5 mt-12 max-w-[600px]">
-        <h2 class="font-mullish font-bold text-2xl text-white">Fall in love with your pregnancy</h2>
-        <div class="w-6 h-1 bg-greenLight"></div>
+        <h2 class="block md:hidden font-mullish font-bold text-2xl text-white pt-4 ">Fall in love with your<br> pregnancy</h2>
+        <h2 class="hidden md:block font-mullish font-bold text-2xl text-white pt-4 ">Fall in love with your pregnancy</h2>
+        <div class="w-6 h-1 bg-greenLight mt-3 mb-4"></div>
         <p class="font-mullish text-white">Sign up now to experience the community of MaaMatters! <br> </p>
 
-        <ul class="flex flex-row flex-wrap gap-x-11 text-white gap-y-3">
+        <ul class="flex flex-col md:flex-row md:flex-wrap gap-x-11 text-white gap-y-3">
           <li class="font-mullish text-white flex flex-row ">
             <i data-feather="check" class="text-greenLight"></i>
             <span>Quick Ambulance
@@ -862,7 +909,7 @@ linked with the data of due dates of the expectant to manage the availability.
         </ul>
 
       <a href="loginandsignup/register.html"><button
-        class="min-w-[32px] font-mullish text-sm font-bold bg-white text-lightBlue300 border flex
+        class="font-mullish text-sm font-bold bg-white text-lightBlue300 border flex
         rounded-sm items-center hover:text-lightBlue500 transition-all duration-200 py-3 px-4 place-self-start">
           Sign Up
           <svg
@@ -883,7 +930,7 @@ linked with the data of due dates of the expectant to manage the availability.
 
       <!--right side wali image-->
       <img src="./images/ctaImg.svg" alt="" width="240px" height="282px" 
-      class="mt-16 pt-3 hidden lg:block">
+      class="mt-16 pt-3 hidden md:block">
 
     </div>
   </section>
